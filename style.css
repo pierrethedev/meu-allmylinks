@@ -6,19 +6,20 @@
 }
 
 body {
-    height: 100vh;
-    background: linear-gradient(135deg, #111, #1e1e1e);
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(253, 229, 229), #be807a);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .card{
-    width: 350px;
+    width: 100%;
+    max-width: 420px;
     padding: 30px;
-    background: #222;
+    background: linear-gradient(135deg, rgba(253, 229, 229, 0), #be807a00);
     border-radius: 20px;
     text-align: center;
-    box-shadow:0 0 25px rgba(0,0,0,0.6);
 }
 .logo{
     width: 100px;
@@ -30,22 +31,35 @@ h1{
     margin-bottom: 10px;
 }
 .bio{
-    color: #aaa;
+    color: #797878;
     margin-bottom: 25px;
     font-size: 14px;
 }
 .link{
     display: block;
+    width: 100%;
     text-decoration: none;
-    background: #333;
+    background: #805f66;
     color: white;
     padding: 12px;
     margin-bottom: 12px;
     border-radius: 10px;
     transition: 0.3s;
+    font-size: 16px;
 }
 .link:hover{
-    background:#00ff88;
+    background:#e7948c;
     color: black;
     transform: scale(1.05);
+}
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .link {
+        font-size: 14px;
+    }
 }
